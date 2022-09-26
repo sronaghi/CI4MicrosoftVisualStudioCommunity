@@ -1,2 +1,4 @@
 # CI4MicrosoftVisualStudioCommunity
-This documentation provides information for the use of CircleCI for a company using Microsoft Visual Studio Community 2022 .sln files as their codebase.
+This documentation is for the continuous integration of Enspectra Health’s codebase using CircleCI. The script (config.yml) is in the .circleci  folder of the circleci-project-setup branch in the sasha-pathwand-source Github repository. This is the branch which connects the Github repository and the circleci-project-setup branch. This branch is used so that updates to the config.yml file can be made without an impact on the other branch in this repository, the main branch. 
+
+The purpose of this script is to automate the build process of a Visual Studio .sln file and publish a release on Github of the artifact files of the build. The build output is being put into a Github release to be able to keep track of changes made to a branch by different contributors. 
